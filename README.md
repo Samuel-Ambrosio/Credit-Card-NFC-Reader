@@ -1,5 +1,4 @@
-# Credit Card NFC Reader
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Credit--Card--NFC--Reader-green.svg?style=true)](https://android-arsenal.com/details/1/3501)
+# Credit Card NFC Reader (Updated)
 
 This library helps developer to read data from credit card: card number, expired date, card type.<br>
 <i>Works only with cards that has paypass or paywave technology!</i>
@@ -17,11 +16,19 @@ This library helps developer to read data from credit card: card number, expired
 ![alt text](screenshots/Screenshot_20160428-122036.png "Scanning")
 ![alt text](screenshots/Screenshot_20160428-122045.png "Ready")
 
-# Usage
-##### Add the dependencies to your gradle file:
+## Usage
+##### Add the dependencies to your gradle files:
+```sh
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
 ```sh
     dependencies {
-        compile 'com.github.pro100svitlo:creditCardNfcReader:1.0.3'
+        implementation 'com.github.Samuel-Ambrosio:Credit-Card-NFC-Reader:1.0.4'
     }
 ```
 
@@ -144,19 +151,20 @@ This is the main callback for managing:
     }
 ```
 
-### Proguard
+## Proguard
 If you are using Proguard, please add this line to your proguard-rules.pro file
 ```
 -keep class com.noveogroup.android.log.** { *; }
 ```
 
-### Updates
+## Updates
 * v.1.0.0
-    1. Add Ingdirect Bank visa card (Australian Bank)
+    1. Add Ingdirect Bank visa card (Australian Bank).
     2. Add default card type as <b>UNKNOWN</b>.
+    4. Updated libraries and target sdk version.
 
 
-### License
+## License
 The MIT License (MIT)
 
 Copyright (c) 2016 Credit Card NFC Reader
