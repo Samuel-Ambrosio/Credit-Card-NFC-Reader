@@ -162,7 +162,9 @@ If you are using Proguard, please add this line to your proguard-rules.pro file
     1. Add Ingdirect Bank visa card (Australian Bank).
     2. Add default card type as <b>UNKNOWN</b>.
 * v.1.0.4
-    - Updated libraries and target sdk version.
+    - Updated libraries and target sdk version (30).
+* v-1.0.5
+    - Version increased because of jitpack issues.
 
 
 ## License
